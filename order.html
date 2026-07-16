@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="base.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <p>Florist database</p>
+            <img src="flower.png" alt="2D red flower with 4 petals and a yellow centre">
+        </div>
+        <div class="links">
+            <a href="order.html">Orders</a>
+            <a href="product.html">Products</a>
+            <a href="product-category.html">Product categories</a>
+            <a href="order-item.html">Order items</a>
+            <a href="customer.html">Customer</a>
+            <a href="employee.html">Employee</a>
+        </div>
+    </header>
+    <main>
+        <h1>Orders</h1>
+        <form action="" method="">
+            <p>
+                <label for="order_item_id">Order item ID:</label>
+                <input type="number" id="order_item_id" name="order_item_id" min="0" required>
+            </p>
+            <p>
+                <label for="customer_id">Customer ID:</label>
+                <input type="number" id="customer_id" name="customer_id" min="0" required>
+            </p>
+            <p>
+                <label for="fulfilled_by_employee_id">Employee ID:</label>
+                <input type="number" id="fulfilled_by_employee_id" name="fulfilled_by_employee_id" min="0" required>
+            </p>
+            <p>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="9999" required>
+            </p>
+            <p>
+                <label for="order_date">Order date:</label>
+                <input type="datetime-local" id="order_date" name="order_date" required>
+            </p>
+            <p>
+                <label for="address">Shipping address:</label>
+                <input type="text" id="address" name="address" maxlength="255">
+            </p>
+            <p>
+                <label for="order_status">Order status:</label>
+                <select name="order_status" id="order_status">
+                    <option value="pending">
+                        <span>Pending</span>
+                    </option>
+                    <option value="shipped">
+                        <span>Shipped</span>
+                    </option>
+                    <option value="delivered">
+                        <span>Delivered</span>
+                    </option>
+                </select>
+            </p>
+            <p class="button">
+                <button type="submit">Submit</button>
+            </p>
+        </form>
+    </main>
+</body>
+</html>

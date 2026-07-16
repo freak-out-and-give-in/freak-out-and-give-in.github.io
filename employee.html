@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="base.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <p>Florist database</p>
+            <img src="flower.png" alt="2D red flower with 4 petals and a yellow centre">
+        </div>
+        <div class="links">
+            <a href="order.html">Orders</a>
+            <a href="product.html">Products</a>
+            <a href="product-category.html">Product categories</a>
+            <a href="order-item.html">Order items</a>
+            <a href="customer.html">Customer</a>
+            <a href="employee.html">Employee</a>
+        </div>
+    </header>
+    <main>
+        <h1>Employees</h1>
+        <form action="" method="">
+            <p>
+                <label for="first_name">First name:</label>
+                <input type="text" id="first_name" name="first_name" minlength="1"  maxlength="255" required>
+            </p>
+            <p>
+                <label for="last_name">Last name:</label>
+                <input type="text" id="last_name" name="last_name" minlength="1"  maxlength="255" required>
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" minlength="1"  maxlength="255" required>
+            </p>
+            <p>
+                <label for="phone">Phone:</label>
+                <input type="number" id="last_name" name="last_name" min="11" max="11" required>
+            </p>
+            <p>
+                <label for="date_hired">Date hired:</label>
+                <input type="datetime-local" id="date_hired" name="date_hired" required>
+            </p>
+            <p>
+                <label for="salary">Salary (annual):</label>
+                <input type="number" id="salary" name="salary" min="0" max="9999999" step=".01" required>
+            </p>
+            <p class="button">
+                <button type="submit">Submit</button>
+            </p>
+        </form>
+    </main>
+</body>
+</html>
